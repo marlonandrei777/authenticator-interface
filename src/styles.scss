@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* se var de cores na aplicação */
+:root {
+  --white: #FFF;
+  --black: #4A4A4A;
+  --red: #DD0330;
+}
+
+// acessibilida !IMPORTANT!
+ html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%; //15px
+  }
+  @media (min-width: 720px) {
+    font-size: 87.5%; //14px
+  }
+}
+
+
+body {
+  background-image: url("./assets/backgroundd.jpg");
+  color: var(--white); /* cor de texto padrão */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* lagura container global */
+/* main {
+  max-width: 48.5rem;
+  margin: 0 auto;
+} */
+
+body, input, textarea, button {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
